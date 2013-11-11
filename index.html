@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Robert B. Scharpf Home  by rscharpf</title>
+    <title>Robert B. Scharpf  by rscharpf</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,53 +15,35 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Robert B. Scharpf Research Page </h1>
-        <p>Research Page</p>
+        <h1>Robert B. Scharpf </h1>
+        <p>Talks</p>
+
+
         <p class="view"><a href="https://github.com/rscharpf">View My GitHub Profile</a></p>
-        <p class="view"><a href="Talks/index.html">Talks</a></p>
-        <p class="view"><a href="Teaching/index.html">Teaching</a></p>
-        <p class="view"><a href="cv.pdf">CV [pdf]</a></p>
+
       </header>
       <section>
-        <h3>
-<a name="research-overview" class="anchor" href="#research-overview"><span class="octicon octicon-link"></span></a>Research Overview</h3>
+        <h1>
+<a name="talks" class="anchor" href="#talks"><span class="octicon octicon-link"></span></a>Talks</h1>
 
-<p>I develop statistical methods and software for the analysis of high-throughput genomic data, including methods for estimating cross-study differential gene expression in mRNA microarrays, methods for detecting structural variants from array- and sequence-based platforms.  I also develop methods and software for preprocessing array and sequence platforms to remove batch effects and other technical sources of variation.  Most of our software is available from Bioconductor, with developmental versions available from github.</p>
-
-<h3>
-<a name="bioconductor-packages" class="anchor" href="#bioconductor-packages"><span class="octicon octicon-link"></span></a>Bioconductor Packages</h3>
+<h2>
+<a name="2013" class="anchor" href="#2013"><span class="octicon octicon-link"></span></a>2013</h2>
 
 <ul>
-<li>oligoClasses: infrastructure for crlmm and oligo packages </li>
-<li>crlmm:  Methods for calling genotypes and copy number for Affymetrix and Illumina genotyping platforms</li>
-<li>SNPchip: A few plotting utilities for log R ratios / BAFs; chromosome idiograms</li>
-<li>XDE: A Bayesian Hierarchical model for cross-study differential gene expression</li>
-<li>MinimumDistance: Methods for calling de novo copy number variants in case-parent trios</li>
-<li>ArrayTV: Software for removing genomic waves from marker-level estimates of copy number such as log R ratios derived Affymetrix or Illumina genotyping arrays</li>
-</ul><p>The above packages can be installed by</p>
-
-<pre><code>$ source("http://www.bioconductor.org/biocLite.R")
-$ pkgs &lt;- c("oligoClasses, "crlmm", "XDE", "MinimumDistance", "ArrayTV", "SNPchip")
-$ biocLite(pkgs)
-</code></pre>
-
-<h3>
-<a name="github-packages" class="anchor" href="#github-packages"><span class="octicon octicon-link"></span></a>GitHub Packages</h3>
-
-<p>The developmental versions of these packages (use at your own risk) are available on github can be installed by</p>
-
-<pre><code>$ install.packages("devtools")
-$ library(devtools)
-$ install_github("MinimumDistance")
-</code></pre>
-
-<p>Note these packages are tested against the developmental version of R.</p>
+<li>
+<a href="Talks/dana_farber_oct2013.pdf">Understanding the contribution of copy number polymorphisms to multi-genic traits</a>,
+Dana-Farber Cancer Institute, Department of Computation Biology and Biostatistics Happy Hour, Boston, MA,
+October 25, 2013</li>
+<li>
+<a href="Talks/hopkins_compgenomics_oct2013.pdf">Understanding the contribution of copy number polymorphisms to multi-genic traits</a>,
+Computational Genomics Seminar, Johns Hopkins University, Baltimore, MD, October 14, 2013</li>
+</ul>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-
+    
   </body>
 </html>
