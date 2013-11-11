@@ -1,0 +1,643 @@
+%use <pdflatex> to compile as follows
+% pdflatex scharpf_jhu
+% bibtex scharpf_jhu
+% bibtex chapters
+% bibtex thesis
+% pdflatex scharpf_jhu x 2
+\documentclass[11pt]{article}%
+\usepackage[pdftex,%
+bookmarks=true,%
+bookmarksnumbered=false, % true means bookmarks in left window are numbered
+bookmarksopen=true, % true means only level 1  are displayed.
+colorlinks=true,%
+citecolor=citegreen,%
+urlcolor=urlblue,%
+linkcolor=citeblue]{hyperref}
+\hypersetup{%
+  pdftitle = {Curriculum Vitae of Robert B. Scharpf},
+  pdfsubject = {Curriculum Vitae of Robert Scharpf},
+  pdfkeywords = {pdf, hyperref, bookmarks, thumbnails},
+  pdfauthor = {\textcopyright\ Heiko Oberdiek},
+  pdfcreator = {\LaTeX\ with package \flqq hyperref\frqq},
+  pdfproducer = {pdfeTeX-0.\the\pdftexversion\pdftexrevision}}
+
+\usepackage{helvetica}
+\usepackage{amsmath,comment,fullpage,color}
+\definecolor{citegreen}{rgb}{0, .75, 0} % less intense green
+\definecolor{citeblue}{rgb}{0.1, 0.1, 0.5} % less intense blue
+\definecolor{urlblue}{rgb}{0, 0, 0.5} % less intense red
+\definecolor{webred}{rgb}{0.5, 0, 0}
+\usepackage{graphicx}
+\newcommand{\R}{\textsf{R}}
+\usepackage[margin=.5in]{geometry}
+\usepackage{multicol}
+\newcommand{\sepsec}{0.2in}
+\newcommand{\largedot}{{\large $\cdot$}}
+\renewcommand{\familydefault}{cmss}
+\newcommand{\spa}{\hspace{1cm} }
+\newcommand{\tbf}{\textbf}
+\newcommand{\contactfont}{\footnotesize}
+\newcommand{\sectionpt}{5pt}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{multibib}
+\bibliographystyle{biosketch}
+\newcites{chapter}{\normalsize \sc Chapters in Books}
+\newcites{thesis}{\normalsize \sc Ph.D. Thesis}
+\newcites{editorial}{\normalsize \sc Editorials}
+\bibliographystylechapter{biosketch}
+\bibliographystylethesis{biosketch}
+\bibliographystyleeditorial{biosketch}
+
+
+%\bibliographystyle{rs}
+%\bibliographystylechapter{rs}
+
+%\renewcommand\refname{PUBLICATIONS \\ {\normalfont
+%    \textsc{Peer-Reviewed Articles}}}
+\renewcommand\refname{{\normalsize \sc Peer-Reviewed Articles}}
+
+\lhead{}
+\chead{}
+
+\cfoot{\thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\addtolength{\headheight}{\baselineskip}
+\rhead{\bfseries \sc Robert B. Scharpf}
+\begin{document}
+\thispagestyle{plain}
+\fontsize{11}{13}  \selectfont
+
+\begin{center}
+\bf
+Curriculum Vitae\\
+The Johns Hopkins University School of Medicine
+%{\Large \textsc{Robert B. Scharpf} \footnote{Updated \today}}\\[4pt]
+%{\contactfont Johns Hopkins University}\\%\largedot ~
+%{\contactfont 550 N. Broadway, Suite 1103 \largedot ~Baltimore, MD 21205-2179}\\
+%{\contactfont  Phone: 410-614-7837  \largedot ~Email: {\tt rscharpf@jhsph.edu}}\\
+%{\contactfont Website: \href{http://www.biostat.jhsph.edu/people/postdocs/scharpf.shtml}{\tt http://www.biostat.jhsph.edu/people/postdocs/scharpf.shtml}\hfill}
+\end{center}
+
+%\begin{figure}[h!]
+\begin{tabular}{lc r}
+\underline{~~~~\includegraphics[width=0.12\textwidth]{signature}~~~~} \vspace{1em}&
+\hspace{25em} & \underline{\today}\\[-1em]
+Robert B. Scharpf & & \\
+\end{tabular}\\
+
+%\vspace{1em}
+\section*{\sc Demographic Information}
+\begin{tabular}{ll}
+\multicolumn{2}{l}{\large \textsc{Current Appointments}}\\
+University\hspace{3em} & Assistant Professor, Department of Oncology\\
+           & Johns Hopkins University\\
+           & Baltimore, MD\\[3pt]
+\multicolumn{2}{l}{\textsc{Joint Appointments}}\\
+           & Assistant Professor, Department of Biostatistics \\
+           & Johns Hopkins Bloomberg School of Public Health\\
+           & Baltimore, MD\\[3pt]
+%\end{tabular}
+%\vspace{1em}
+\multicolumn{2}{l}{\large \textsc{Personal Data}}\\
+%\begin{tabular}{ll}
+Office\hspace{3em} & Johns Hopkins University\\
+& 550 N. Broadway, Suite 1103\\
+& Baltimore, MD 21205-2179\\
+& Phone: 443-287-9408\\
+& FAX: 410-955-0859\\
+& Email: \texttt{rscharpf@jhsph.edu}\\
+\end{tabular}\\
+\vspace{1em}\\
+\begin{tabular}{llll}
+\multicolumn{4}{l}{\large \textsc{Education and Training}}\\
+\bf \underline{Year} & \bf \underline{Degree} & \bf \underline{Institution} & \bf \underline{Discipline} \\
+1990-1994 & BS & James Madison University & Biology\\
+1998-2002 & MS & Johns Hopkins University & Biotechnology\\
+          &    & Krieger School of Arts \& Sciences&\\
+2002-2007 & PhD& Johns Hopkins Bloomberg& Biostatistics\\
+          &    & School of Public Health& \\
+2007-2010 & n/a& Johns Hopkins Bloomberg& Postdoctoral Fellow\\
+          &    & School of Public Health& \\
+\end{tabular}\\
+\vspace{1em}\\
+\begin{tabular}{llp{3.8in}}
+\multicolumn{3}{l}{\large \textsc{Professional Experience}}\\
+ 1995 - 1998 & Informatics Research Assistant &Johns Hopkins School of Medicine,
+  Baltimore, MD\\
+ 1998 - 2002 & Laboratory Research Assistant & Johns Hopkins School of Medicine,
+  Baltimore, MD\\
+%2002 - 2007 & PhD Student & Johns Hopkins School of Public
+%Health, Baltimore, MD \\
+2006 - 2007 & Statistical Consultant for PhD Students
+& Johns Hopkins School of Public Health, Baltimore, MD \\
+2007 - 2008 & Visiting Assistant Professor &American University of
+Armenia, Yerevan, Armenia\\
+2007 - 2010 & Postdoctoral fellow & Johns Hopkins University School of
+Public Health, Baltimore, MD\\
+2010 - & Assistant Professor & Johns Hopkins School of Medicine,
+Baltimore, MD
+\end{tabular}\\
+
+\section*{\sc Research Activities}
+
+%\subsection*{\large \sc Peer-Reviewed Articles}
+\input{mypublications}
+%\bibliographystyle{biosketch}
+\bibliography{refs}
+\bibliographychapter{refs}
+\bibliographyeditorial{refs}
+\bibliographythesis{refs}
+
+\subsection*{\sc Extramural Sponsorship (current, pending, previous)}
+\textsc{Current}
+
+\begin{tabular}{ll}
+  04/01/2013 - 10/01/2013 & R00 Pathways to Independence Award \\
+  & R00HG005015\\
+  & NHGRI \\
+  & \$23,000 \\
+  & PI: Scharpf/ 14\%\\
+\end{tabular}
+
+\vspace{0.5em}
+
+\begin{tabular}{ll}
+05/07/1997 - 04/30/2012& Regional Oncology Research Center: Bioinformatics Core	\\
+& P30CA006973 \\
+& NCI \\
+& \$4,613,214 \\
+& PI: Nelson/Ochs \\
+& Role: Statistician/ 1\% \\
+\end{tabular}
+
+\vspace{0.5em}
+
+\begin{tabular}{ll}
+04/01/2011 - 03/31/2015 & Validation and Fine-Scale Mapping of Pancreatic Cancer Susceptibility Loci\\
+& R01CA154823 \\
+& NCI\\
+& \$2,246,569\\
+& Role: Statistician/ 4\%\\
+\end{tabular}
+
+\vspace{0.5em}
+
+\begin{tabular}{ll}
+09/01/2009 - 07/31/2014 & TGF-beta Signaling in Pancreatic Cancer Progression\\
+& R01CA140599 \\
+& NCI \\
+&\$201,275 \\
+& PI: Iacoubzio-Donahue \\
+& Role: Statistician 5\%\\[2pt]
+\end{tabular}
+
+\vspace{0.5em}
+
+\begin{tabular}{ll}
+12/01/2011 -- 11/30/2014 & Software for the statistical analysis of microarray probe level data\\
+& R01RR021967 \\
+& NIH \\
+& \$231,294\\
+& PI: Irizarry \\
+& Role: Co-investigator 5\%\\
+\end{tabular}
+
+\vspace{0.5em}
+
+
+\begin{tabular}{ll}
+  09/01/2007-05/31/2012 & Institutional Clinical and Translational Science Award\\
+  &U54RR023561\\
+  &\$15,378,996\\
+  &PI: Ford\\
+  &Role: Statistician/ 5\% \\
+\end{tabular}
+
+
+%\vspace{0.5em}
+%\noindent \textsc{Pending}
+%
+%\begin{tabular}{ll}
+%07/01/2012 - 06/30/2017 & Integrative Genomics for Barrett's Detection
+%and risk Assessment\\
+%&R24DK096526 \\
+%&\$1,144,247 \\
+%&NIDDK \\
+%&PI: Meltzer\\
+%&Role: Statistician\ 10\%
+%\end{tabular}
+
+\vspace{0.5em}
+\noindent \textsc{Previous}
+
+\begin{tabular}{ll}
+  07/01/2010 - 04/01/2013 & R00 Pathways to Independence Award \\
+  & R00HG005015\\
+  & NHGRI \\
+  & \$249,000 \\
+  & PI: Scharpf/ 75\%\\
+\end{tabular}
+
+\begin{tabular}{ll}
+  09/30/2009 - 08/31/2011 & Next-generation medical resequencing of gout disease genes in the ARIC cohort\\
+  & RC2HG005697\\
+  & UTHSCH/NHGRI \\
+  & \$370,710 \\
+  & PI: Hixon/Kao\\
+  & Role: Statistician/ 2\% \\
+\end{tabular}
+
+\vspace{0.5em}
+
+\begin{tabular}{ll}
+04/01/2009-04/01/2010 & K99 Pathways to Independence Award \\
+& K99HG005015\\
+& NHGRI \\
+& \$83,000\\
+& PI: Scharpf / 83\%\\
+\end{tabular}
+
+\vspace{0.5em}
+
+
+\begin{tabular}{ll}
+03/01/2007-03/01/2009 & Cardiovascular Disease and epidemiology Fellowship\\
+& NHLBI\\
+& \$687,297\\
+& PI: Coresh\\
+& Role: Trainee/100\%
+\end{tabular}
+
+\vspace{0.5em}
+
+\begin{tabular}{ll}
+07/12/2004-06/30/2009 & Environmental Biostatistics and Epidemiology Training Grant \\
+& NIEHS\\
+& \$181,891\\
+& PI: Louis\\
+& Role: Trainee/100\%
+\end{tabular}
+
+\vspace{0.5em}
+
+\begin{tabular}{ll}
+2004, 2006-2008 ~~~~~~~~~~& Bioinformatics training grant \\
+& T32GM074906\\
+& NSF\\
+& \$248,856\\
+& PI: Parmigiani\\
+& Role: trainee/100\%
+\end{tabular}
+\vspace{0.5em}
+
+\section*{\sc Educational Activities}
+
+%\subsection*{\textbf{\textsc{Primary Instructor}}}
+\noindent\textsc{Primary Instructor}
+
+\begin{tabular}{ll}
+\multicolumn{2}{c}{Department of Health Sciences, University of
+  Armenia}\\
+2007 (Fall) & Inferential Biostatistics I \\
+2008 (Fall) & Modeling and Sampling \\[3pt]
+2013 (Spring) & Bayesian Methods I
+\end{tabular}
+
+\vspace{4pt}
+
+\noindent\textsc{Co-instructor}
+
+\begin{tabular}{ll}
+%\multicolumn{2}{l}{Co-instructor}\\
+\multicolumn{2}{c}{Department of Biostatistics, Johns Hopkins
+  Bloomberg School of Public Health}\\
+2006 (Summer) & The Analysis of Gene Expression Data\\[2pt]
+2009 (Fall) & Lab for Statistical Methods in Public Health I and II\\ [2pt]
+2010 (1st term) & Lab for Statistical Methods in Public Health I
+\\[2pt]
+2011 (Spring) & Programming in \R{}  \\ [2pt]
+2011 (Fall) & Programming in \R{}\\ [2pt]
+2012 (Fall) & Programming in \R{}\\[2pt]
+2012 (Spring) & Lab for Statistical Methods in Public Health III\\[2pt]
+2013 (Spring) & Programming in \R{}\\
+\end{tabular}
+
+\vspace{4pt}
+
+\noindent\textsc{Teaching Assistant}
+
+\begin{tabular}{ll}
+\multicolumn{2}{c}{Department of Biostatistics, Johns Hopkins
+  Bloomberg School of Public Health}\\
+2005-2007 & Statistical Methods in Public Health I and II\\
+2005 & Generalized Linear Models III, IV\\
+2004 & Introduction to Probability I, II\\
+2003-2004 & Statistical Methods in Public Health I-IV\\[3pt]
+\end{tabular}
+
+\noindent {\textsc{Guest Lectures}
+
+%{\it Department of Biostatistics, Johns Hopkins Bloomberg School of Public Health} \\[2pt]
+\begin{tabular}{lp{2in}l}
+\multicolumn{3}{l}{Department of Biostatistics, JHSPH}\\
+09/17/2009 & Learning \LaTeX & 140.776 Statistical Computing\\
+11/26/2009 & SNP arrays, genotyping, copy number variations & 140.668 Special Topics In Genomics\\
+03/08/2010 & Measuring copy number variation & 140.668 Special Topics in Genomics\\
+03/10/2010 & Variation in the Human Genome and Disease & 140.668 Special Topics in Genomics\\
+06/30/2010 & Statistical Approaches for CNV Analysis &   Summer Epi \& Biostat Institute\\
+11/02/2010& ANOVA & 140.621 Statistical Methods in
+Public Health II  \\
+11/04/2010& Simple Linear Regression& 140.621 Statistical Methods in
+Public Health II
+\end{tabular}
+
+\begin{tabular}{lp{2in}l}
+02/04/2011& Multiple Random Variables & 140.615 Statistics for
+Laboratory Scientists\\
+03/14/2011& ANOVA & 140.615 Statistics for Laboratory Scientists\\
+09/2011 & Learning \LaTeX & 140.776 Statistical Computing\\
+11/2011 & Linear Regression & 140.622 Statistical Methods in Public
+Health II\\
+02/2012 & Survival Analysis & 140.623 Statistical Methods in Public
+Health III\\ [2pt]
+\multicolumn{3}{l}{Department of Epidemiology, JHSPH}\\
+10/2011 & Copy number estimation & Genetic Epidemiology \\ [2pt]
+\multicolumn{3}{l}{Summer Institute, JHSPH}\\
+06/2011 & Copy number estimation & Molecular Biology for Genetic
+Epidemiology\\ [2pt]
+\multicolumn{3}{l}{FAES Workshop, National Institutes of Health}\\
+05/25/2011 & Measuring DNA copy number from SNP arrays& Advanced
+Microarray Analysis and Pathway Integration\\[2pt]
+03/01/2013 & Confidence Intervals for Proportions & 140.615 Statistics
+for Laboratory Scientists \\[2pt]
+03/25/2013 & Goodness of Fit & 140.615 Statistics
+for Laboratory Scientists \\
+\end{tabular}
+
+\vspace{4pt}
+
+\noindent\textsc{Mentoring}
+
+\vspace{2pt}
+
+\begin{tabular}{llll}
+\multicolumn{3}{l}{Dissertation Reader for MPH Candidates}\\
+2009 & Kushagra Mahansoria & American University of
+Armenia\\
+2009 & Lilit Khachatryan & American University of
+Armenia\\
+2009 & Mikhayil Melikou & American University of
+Armenia\\
+2013 & Saki Takahashi &  Johns Hopkins School of Public Health
+\end{tabular}
+
+\vspace{3pt}
+
+
+\begin{tabular}{llll}
+  \multicolumn{4}{l}{Summer research students}\\
+  2010 & Kinjal Basu  & Topic: copy number estimation & co-advised with Aravinda Chakravarti\\
+  2010 & Jack Yu      & Topic: copy number estimation &co-advised with Sarah Wheelan and Jonathan Pevsner\\
+\end{tabular}\\
+
+\vspace{3pt}
+
+\begin{tabular}{llll}
+  \multicolumn{4}{l}{Research assistant}\\
+ 2010 -  & Lynn Mireless & Research area: copy number analysis for ARIC cohort study &
+ co-advised with Linda Kao\\
+\end{tabular}\\
+
+\begin{tabular}{llll}
+  \multicolumn{4}{l}{Postdoctoral fellows}\\
+  2012 -  & Rumen Kostadinov& Clonality \& evolution of cancers &
+  co-advised with Rafael Irizarry and Patrick Brown\\
+\end{tabular}\\
+
+%\noindent\textsc{Former students/Research assistants}
+
+\begin{tabular}{llll}
+\multicolumn{4}{l}{Former students }\\
+& & Current Position & Job Title \\[2pt]
+ 2010 - 2011 & Moiz Bootwalla & University of Southern California &
+ Programmer Analyst III \\
+\end{tabular}
+
+\vspace{2pt}
+
+\noindent\textsc{Thesis Committees}
+
+\begin{tabular}{llll}
+%\multicolumn{4}{l}{PhD Candidates}\\
+\textbf{Date} & \textbf{PhD Candidate} & \textbf{Activity} & \textbf{Advisor} \\
+December, 2010 & Eric Stevens & Committe Meeting & Jonathan Pevsner\\
+May, 2010 & Joseph Baugher & Committe Meeting & Jonathan
+Pevsner\\
+
+December, 2011 & Eric Stevens & Committe Meeting & Jonathan
+Pevsner\\
+September, 2012 & Eric Stevens & Committe Meeting & Jonathan
+Pevsner\\
+June, 2012 & Joseph Baugher & Committe Meeting & Jonathan
+Pevsner\\
+December, 2012 & Josepf Baugher & Dissertation reader & Jonathan Pevsner
+\end{tabular}
+
+
+%\subsection*{\sc Editorial Activities}
+\subsection*{\sc Editorial Activities}
+
+\textsc{Peer-Review for Journals}\\
+\noindent 2013: Statistics in Medicine (1)\\
+\noindent 2012: Bioinformatics (1) \largedot~ Computational Statistics and Data
+Analysis (1) \largedot~ IEEE Transactions in Computational Biology and
+Bioinformatics (1) \largedot~ PLOS One (2)\\
+\noindent 2011: \t Bioinformatics (2) \largedot~ BMC Bioinformatics (1)
+\largedot~ Journal of Statistical Software (1) ~\largedot~ Nucleic
+Acids Research (1) \largedot~ Statistical Applications in Genetics and Molecular
+Biology (1) \\
+\noindent 2010:\t BMC Bioinformatics (3) \largedot~ Bioinformatics (3)
+\largedot~ Biostatistics (1) \largedot ~SAGMB (1) \largedot ~
+Pharmacogenomics (1)\\
+\noindent 2006-2009:~~ American Journal of Epidemiology (2) \largedot ~
+Bioinformatics (3) \largedot ~ Biometrics (1) \largedot~ Biostatistics
+(2) \largedot ~BMC Bioinformatics (1) \largedot~ BMC Genomics (1)
+\largedot ~Computational Statistics and Data Analysis (2) \largedot~
+Genomics (1) \largedot~ JASA (2) \largedot~ Statistics in Medicine (1)
+\largedot~Statistical Methods and Applications (1)\\
+\vspace{0.05em}\\
+\noindent \textsc{Peer-Review for Software:} Bioconductor Project (1)\\
+\vspace{0.05em}\\
+\noindent\textsc{Peer-Review for Conferences/Symposia:} Pacific
+Symposium on Biocomputing (1)
+\vspace{0.05em}
+\noindent\textsc{Peer-Review for Consortia:} Atherosclerosis Risk in
+Compmunities Publications Committee (2)
+
+\section*{\sc Organizational Activities}
+
+\noindent\textsc{Organizer of Invited Session}\\
+\begin{tabular}{lll}
+  March, 2010 & ENAR & Statistical models and practice that improve reproducibility in genomics research\\
+\end{tabular}
+
+\vspace{2pt}
+
+\noindent\textsc{Session Chair}\\
+\begin{tabular}{lll}
+  March, 2010 & ENAR & Invited Session: Statistical models and practice that\\
+&& improve  reproducibility in genomics research\\
+  August, 2010 & Joint Statistical Meetings & Contributed Session: Genomics and Mutation Classification\\
+\end{tabular}
+
+\subsection*{\sc Professional Societies}
+\newcommand{\awardspace}{2pt}
+\begin{tabular}{ll}
+2006 - \. & American Statistical Association\\[\awardspace]
+2007   & Interface\\[\awardspace]
+2008   & American Heart Association\\[\awardspace]
+\end{tabular}
+
+
+\section*{\sc Recognition}
+
+\noindent\textsc{Honors and Awards}
+
+\begin{tabular}{lp{6in}}
+%  2009 & NIH K99/R00 Pathways to Independence Award\\
+  2008 & Young Investigator Travel Award, Markov Chain Monte Carlo in Theory and Practice (``MCMSki'') Conference, the 2nd International Joint Meeting of the Institute of Mathematical Statistics and the International Society for Bayesian Analysis, Bormio, Italy\\[\awardspace]
+  2007 & Margaret Merrell Award for Excellence in Research, Johns Hopkins Bloomberg School of Public Health \\[\awardspace]
+  2007 & Helen Abbey Award for Excellence in Teaching, Johns Hopkins
+  Bloomerg School of Public Health% \\[\awardspace]
+\end{tabular}
+
+\begin{tabular}{lp{6in}}
+  2006 & Travel Scholarship sponsored by the American Statistical Association, Bioconductor Conference, Seattle, WA \\[\awardspace]
+  2006 & Nominated for Teaching Assistant Recognition Award, Johns Hopkins Bloomberg School of Public Health \\[\awardspace]
+  2001 & Research Citation Finalist, Anesthesiology and Critical Care Medicine Conference, San Francisco, CA\\  [\awardspace]
+  1994 & Finalist for Excellence in Biology Award, James Madison University\\
+\end{tabular}\\
+
+\vspace{2pt}
+
+\noindent\textsc{Invited Talks}
+
+\begin{itemize}
+  \setlength{\itemsep}{-1pt}
+
+\item {\it Association of denovo copy number variants with oral clefts},
+  International Chinese Statistical Association, Boston, MA.  June 24,
+  2012.
+
+\item {\it Association of denovo copy number variants with oral clefts},
+  FaceBase Workshop, Los Angelos, CA.  June 26,
+  2012.
+
+\item {\it Measuring copy number from high-throughput SNP arrays},
+  ENAR International Biometric Society Conference, March 24, 2011.
+
+\item {\it Copy number estimation and batch effects in SNP arrays},
+  International Biometric Conference, Florianopolis, Brazil.  December
+  6, 2010.
+
+\item {\it Copy number estimation and batch effects in SNP arrays},
+  BIRS Statistical Genomics In Biomedical Research, Banff,
+  Alberta. July 20, 2010.
+
+\item {\it Batch effects in SNP arrays: solutions for genotyping and
+    copy number estimation}, Vassar University, November 17, 2009.
+
+\item {\it Batch effects in SNP arrays: solutions for genotyping and
+    copy number estimation}, Computational Biology and Bioinformatics
+  Seminar, M.D. Anderson Cancer Center, Houston, TX, Sept 30, 2009.
+
+\item {\it Discussant}, Biostatistics Grand Rounds, Johns Hopkins Bloomberg
+  School of Public Heath, Baltimore, MD, February 4, 2009.
+
+\item {\it Genome-scale estimation of copy number and inference},
+  Second Annual Young Investigator Symposium on Genomics and
+  Bioinformatics, Department of Biostatistics, Johns Hopkins Bloomberg
+  School of Public Health, Baltimore, MD, September 5, 2008.
+
+\item {\it Estimation problems in high throughput SNP platforms},
+  Genome-Wide Association Studies Symposium, Graduate Institute in
+  Epidemiology and Biostatistics, Johns Hopkins Bloomberg School of
+  Public Health, Baltimore, MD (June 16, 2008).
+
+\item {\it A Bayesian model for cross-study differential gene
+    expression}. MCMSki II, Bormio, Italy (January 11, 2008).
+
+\item {\it A Bayesian model for cross-study differential gene
+    expression}. 39th Conference on Interface of Statistics and
+  Computing Science, Philadelphia, PA (May 24, 2007).
+
+\item {\it Combining estimates of copy number and genotype in
+    high-throughput SNP chips}. Eastern North American Region (ENAR)
+  International Biometric Society Conference, Atlanta, GA (March 12, 2007).
+
+\item {\it Visualizing and analyzing high density SNP data with
+    SNPscan}. ENAR Conference, Tampa, FL (March 28, 2006).
+\end{itemize}
+
+\vspace{2pt}
+
+\noindent\textsc{Contributed Talks}
+
+\begin{itemize}
+
+\item {\it Finding de novo copy number variants in case-parent trios
+    for oral cleft}. European Bioconductor Developer's Meeting, Zurich
+  Switzerland (December 13, 2012).
+
+\end{itemize}
+
+\vspace{2pt}
+
+\section*{\sc Other Professional Accomplishments}
+
+\noindent \textsc{ \textsf{R} packages available at \href{http://www.bioconductor.org}{Bioconductor}}: \\[4pt]
+\begin{tabular}{lp{5.8in}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \href{http://www.bioconductor.org/packages/2.9/bioc/html/SNPchip.html}{SNPchip}
+  &
+  {\bf Scharpf RB} and Ruczinski I. Classes and methods for visualization of high-throughput SNP chip data.
+  \\ [2pt]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \href{http://www.bioconductor.org/packages/2.9/bioc/html/VanillaICE.html}{VanillaICE}
+& {\bf Scharpf RB} and Ruczinski I.
+Hidden Markov Models for identifying chromosomal aberrations
+using high-throughput SNP chip data.
+\\[2pt]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\href{http://www.bioconductor.org/packages/2.9/bioc/html/XDE}{XDE}
+&  {\bf Scharpf RB}, Tjelmeland H, Nobel AB, and Parmigiani G.  A
+Bayesian multilevel model for cross-study differential gene expression.
+\\[2pt]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \href{http://www.bioconductor.org/packages/2.9/bioc/html/crlmm}{crlmm}
+& Carvalho B and {\bf Scharpf RB}, Genotyping and copy number estimation
+for high-throughput SNP arrays.
+\\[2pt]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \href{http://www.bioconductor.org/packages/2.9/bioc/html/oligoClasses}{oligoClasses}
+& Carvalho B and {\bf Scharpf RB}, Infrastructure for analysis of
+high-throughput genotyping platforms.
+\\
+  \href{https://github.com/rscharpf/MinimumDistance}{MinimumDistance}
+  &
+  {\bf Scharpf RB} and others.  Fast Detection of De Novo Copy Number Variants from SNP Arrays.
+\end{tabular}
+
+%\noindent \textsc{ \textsf{R} packages available from \href{http://www.github.com}{GitHub}}: \\[4pt]
+%\begin{tabular}{lp{5.8in}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  \href{https://github.com/rscharpf/MinimumDistance}{MinimumDistance}
+%  &
+%  {\bf Scharpf RB} and others.  Fast Detection of De Novo Copy Number Variants from SNP Arrays.
+%  \\ [2pt]
+%\end{tabular}
+\end{document}
+
+
